@@ -39,13 +39,35 @@
 }
 
 @media(max-width: 768px){
+    .Home {
+        flex-direction: column-reverse;
+    }
     .Home .image{
-        display: none;
+        width: 400px;
     }
     .Home .content{
     text-align: center;
     padding-top: 70px;
 }
-
+}
+@media(max-width: 444px){
+    .Home .image {
+        width: 320px;
+    }
+}
+@media(max-width: 360px){
+    .Home .image{
+        width: 270px;
+    }
+    .Home .content h3{
+    text-align: center;
+    padding-top: 0px;
+    font-size: 40px;
+}
+}
+@media(max-width: 305px){
+    .Home .image{
+        width: 245px;
+    }
 
 }
