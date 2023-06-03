@@ -1,0 +1,95 @@
+.heading{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+}
+.heading span{
+    color: var(--pri-color);
+
+}
+
+header{
+    position: sticky;
+    top: 0; right: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    box-shadow: 0 -3.7px 12.3px rgb(0 0 0 / 50%);
+    padding: 15px 6%;
+    background: var(--for-color);
+
+
+    
+}
+header .logo{
+    font-size: 25px;
+    display: inline-block;
+    color: rgb(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+header .logo i{
+    padding-right: 10px;
+    font-size: 20px;
+    color: var(--pri-color);
+    
+}
+header #menu-bar{
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+header .navbar a{
+    padding-left: 15px;
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-weight: 600;
+}
+header .navbar a:hover{
+    color: var(--pri-color);
+    transition: all 0.5s ease;
+}
+
+@media(max-width: 991px){
+    header{
+        padding: 15px;
+    }
+    header .navbar a{
+        padding-left: 10px;
+    }
+    section{
+        padding: 30px;
+    }
+}
+@media(max-width: 768px){
+    header #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        display: inline-block;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: var(--for-color);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.2s ease;
+
+    }
+    
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar.remove{
+        display: none;
+    }
+    header .navbar a{
+        display: block;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 2px solid var(--pri-color);
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+}

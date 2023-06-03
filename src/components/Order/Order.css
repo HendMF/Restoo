@@ -1,0 +1,56 @@
+.order .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1) ;
+    border-radius: 6px;
+}
+.order .row .order-image{
+    flex: 1 1 300px;
+     
+}
+.order .row  .order-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.order .row form{
+    flex: 1 1 500px;
+    padding: 10px;
+}
+.order .row form .orderBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+.order .row form .orderBox input, .order .row form textarea{
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    border-radius: 6px;
+    color: rgb(0, 0, 0, 0.7)    ;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    width: 48%;
+    text-transform: none;
+}
+
+.order .row form textarea{
+    width: 100%;
+    resize: none ;
+    height: 150px;
+}
+.order .row form .btn{
+    background: none;
+}
+.order .row form .btn:hover{
+    background: var(--pri-color);
+}
+
+@media(max-width: 415px){
+    .order .row form .orderBox input{
+        width: 100%;
+    }
+}

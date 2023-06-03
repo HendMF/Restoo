@@ -1,0 +1,6 @@
+.speciality .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}

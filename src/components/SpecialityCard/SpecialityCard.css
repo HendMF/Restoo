@@ -1,0 +1,54 @@
+.spicialityBox{
+    flex: 1  1 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0.5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    Box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+}
+.spicialityBox .box-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%; left: 0;
+    object-fit: cover;
+}
+.spicialityBox .content{
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+}
+.spicialityBox .content img{
+    margin: 7px 0;
+}
+.spicialityBox .content h3{
+    font-size: 25px;
+    color: rgba(0, 0, 0,0.7);
+
+}
+
+.spicialityBox .content p{
+    font-size: 15px;
+    padding: 20px 0px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.spicialityBox:hover .box-image{
+    top: 0;
+}
+.spicialityBox:hover .content {
+    transform: translateY(100%);
+
+
+}
+
+/* Media queries */
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .spicialityBox .content{
+        padding: 20px 15;
+    }
+}

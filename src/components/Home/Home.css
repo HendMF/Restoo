@@ -1,0 +1,51 @@
+.Home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    min-height: 100vh;
+    align-items: center;
+    background: url('./../../images/home_images/home_bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.Home .content{
+    flex: 1 1 24rem;
+    padding-top: 70px;
+}
+.Home .content h3{
+    font-size: 45px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+}
+.Home .content p{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+}
+.Home .image{
+    flex: 1 1 24rem;
+}
+.Home .image img{
+    width: 100%;
+    animation: float 3s linear infinite;
+}
+@keyframes float{
+    0%,100% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+}
+
+@media(max-width: 768px){
+    .Home .image{
+        display: none;
+    }
+    .Home .content{
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+}

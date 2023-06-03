@@ -1,0 +1,25 @@
+.step-container .steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.step-container .box{
+    flex: 1 1 300px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 60px;
+
+    
+}
+.step-container .box img{
+    border:10px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.4);
+}
+.step-container .box h3{
+    margin-top: 30px;
+    position: relative;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}

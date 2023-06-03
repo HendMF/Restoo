@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.big_div {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items: flex-start;
+  min-height: 30vh;
+  margin: 20px;
+  border: 1px solid black;
+  padding-left: 150px;
+}
+.img_box {
+  max-height: 100vh;
+}
+.img_box img {
+  width: 100%;
+}
+.name_title {
+  margin-bottom: 15px;
+}
+.name_title p {
+  font-size: 35px;
+}
+.name_title span {
+  font-size: 18px;
+  text-align: center;
+}
+p {
+  font-size: 17px;
+}

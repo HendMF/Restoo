@@ -1,0 +1,33 @@
+.footer-wrapper{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0;bottom: 0;right: 0;
+    
+}
+.footer{
+    min-height: 100%;
+}
+.footer-wrapper .footer .info{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-wrapper .footer h2{
+    font-size: 20px;
+    color: var(--for-color);
+    text-align: center;
+    padding-top: 15px;
+}
+.footer-wrapper .footer h2 span{
+    color: var(--pri-color);
+}
+
+@media (min-width : 280px) {
+    .footer{
+        bottom: 0;right: 0;left: 0;
+    }
+    
+}
